@@ -40,16 +40,6 @@
       </class> <!-- testCases.UserTests -->
     </classes>
   </test> <!-- User Tests(failed) -->
-  <test thread-count="2" parallel="tests" name="Cart Tests(failed)">
-    <classes>
-      <class name="testCases.CartTests">
-        <methods>
-          <include name="setup"/>
-          <include name="testCreateCart"/>
-        </methods>
-      </class> <!-- testCases.CartTests -->
-    </classes>
-  </test> <!-- Cart Tests(failed) -->
   <test thread-count="2" parallel="tests" name="Auth Tests(failed)">
     <classes>
       <class name="testCases.LoginTests">
@@ -73,4 +63,23 @@
       </class> <!-- testCases.SchemaTests -->
     </classes>
   </test> <!-- Schema Tests(failed) -->
+  <test thread-count="2" parallel="tests" name="Cart Tests(failed)">
+    <classes>
+      <class name="testCases.CartTests">
+        <methods>
+          <include name="setup"/>
+          <include name="testGetCartsSorted"/>
+          <include name="testGetCartsWithLimit"/>
+          <include name="testGetCartsSortedAsc"/>
+          <include name="testGetAllCarts"/>
+          <include name="testGetCartById"/>
+          <include name="testGetCartsByDateRange"/>
+          <include name="testGetUserCart"/>
+          <include name="testUpdateCart"/>
+          <include name="testDeleteCart"/>
+          <include name="testCreateCart"/>
+        </methods>
+      </class> <!-- testCases.CartTests -->
+    </classes>
+  </test> <!-- Cart Tests(failed) -->
 </suite> <!-- Failed suite [API TestSuite] -->
